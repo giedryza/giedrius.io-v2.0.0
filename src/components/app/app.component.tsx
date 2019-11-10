@@ -1,5 +1,8 @@
 import React from 'react';
 
+import '../../styles/global/normalize.css';
+import '../../styles/index.scss';
+
 const App: React.FC = () => {
   return (
     <div>
