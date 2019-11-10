@@ -1,9 +1,16 @@
 import React from 'react';
 
-const Card = () => {
+import Icon, { IconName } from '../icon/icon.component';
+
+interface Props {
+  icon: IconName;
+}
+
+const Card: React.FC<Props> = ({ icon }) => {
   return (
-    <div>
-      <h1>Card</h1>
+    <div className="card">
+      <Icon name={icon} />
+      <span className="card__tooltip">Typescript</span>
     </div>
   );
 };

@@ -1,0 +1,59 @@
+.card {
+  // TODO remove margin
+  margin: 2rem auto;
+
+  position: relative;
+  width: 12rem;
+  height: 12rem;
+  box-shadow: $shadow__card;
+  border-radius: 8px;
+  padding: 1rem;
+  background: $col__white;
+
+  > svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center center;
+  }
+
+  &__tooltip {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    font-size: 1.2rem;
+    color: #fff;
+    background: $col__black;
+    opacity: 0;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+  }
+
+  &:hover {
+    animation: bounce 0.5s ease-in forwards;
+    z-index: 10;
+
+    .card__tooltip {
+      opacity: 1;
+      transition: opacity 0.2s ease-in 0.3s;
+      z-index: 15;
+    }
+  }
+}
+
+@keyframes bounce {
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  75% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
