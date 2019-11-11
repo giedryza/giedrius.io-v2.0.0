@@ -10,7 +10,7 @@ interface Props {
 const Card: React.FC<Props> = ({ icon, label }) => (
   <div className="card">
     <Icon name={icon} />
-    <h4 className="card__label">{label}</h4>
+    <h4 className="card__label heading__sm">{label}</h4>
   </div>
 );
 

@@ -20,13 +20,17 @@ const Skills: React.FC = () => {
   ];
 
   return (
-    <div className="skills__container">
+    <section className="skills">
       <Title title="Skills" />
 
-      {skills.map(skill => (
-        <Card icon={skill.icon} label={skill.label} key={skill.label} />
-      ))}
-    </div>
+      <ul className="skills__container">
+        {skills.map(skill => (
+          <li key={skill.label}>
+            <Card icon={skill.icon} label={skill.label} />
+          </li>
+        ))}
+      </ul>
+    </section>
   );
 };
 

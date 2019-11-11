@@ -1,0 +1,31 @@
+.heading__xs {
+}
+.heading__sm {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: $col__black;
+}
+.heading__md {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: $col__black;
+}
+.heading__lg {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: $col__black;
+}
+.heading__xl {
+}
+
+.body__md {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.body__lg {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+}

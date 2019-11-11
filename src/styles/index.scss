@@ -6,8 +6,10 @@
 @import 'mixins/btn-base';
 
 @import 'utils/container';
+@import 'utils/typography';
 
 @import '../components/card/card.styles.scss';
 @import '../components/skills/skills.styles.scss';
 @import '../components/title/title.styles.scss';
 @import '../components/hr/hr.styles.scss';
+@import '../components/experience/experience.styles.scss';

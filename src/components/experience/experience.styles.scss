@@ -1,0 +1,75 @@
+.experience {
+  padding: 5rem 0;
+
+  &__card {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 400px;
+    display: flex;
+  }
+
+  &__data {
+    margin: 2rem 1rem;
+
+    > h3 {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__list-item {
+    position: relative;
+    width: 1px;
+    margin: 0 auto;
+    background: $col__black;
+
+    &:hover {
+      &::after {
+        background: $col__black;
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0);
+      width: 15px;
+      height: 15px;
+      background: $col__white;
+      border: 1px solid $col__black;
+      border-radius: 50%;
+    }
+
+    &:first-child,
+    &:last-child {
+      &::before {
+        content: '';
+        position: absolute;
+        width: 1px;
+        background: $col__white;
+      }
+    }
+
+    &:first-child {
+      &::before {
+        top: 0;
+        height: 4rem;
+      }
+    }
+
+    &:last-child {
+      &::before {
+        bottom: 0;
+        height: 6rem;
+      }
+    }
+
+    &:nth-child(odd) > .experience__card {
+      transform: translateX(-100%);
+      flex-direction: row-reverse;
+      text-align: right;
+    }
+  }
+}

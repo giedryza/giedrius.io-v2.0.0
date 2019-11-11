@@ -8,10 +8,10 @@ interface Props {
 
 const Title: React.FC<Props> = ({ title }) => {
   return (
-    <div className="title">
+    <header className="title">
       <h2 className="title__label">{title}</h2>
       <Hr />
-    </div>
+    </header>
   );
 };
 
