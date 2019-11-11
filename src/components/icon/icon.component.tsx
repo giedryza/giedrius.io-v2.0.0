@@ -3,6 +3,7 @@ import React from 'react';
 import { ReactComponent as Css } from '../../assets/icons/css.svg';
 import { ReactComponent as Express } from '../../assets/icons/express.svg';
 import { ReactComponent as Facebook } from '../../assets/icons/facebook.svg';
+import { ReactComponent as Gatsby } from '../../assets/icons/gatsby.svg';
 import { ReactComponent as Html } from '../../assets/icons/html.svg';
 import { ReactComponent as Javascript } from '../../assets/icons/javascript.svg';
 import { ReactComponent as Mongo } from '../../assets/icons/mongo.svg';
@@ -16,6 +17,7 @@ export enum IconName {
   CSS,
   EXPRESS,
   FACEBOOK,
+  GATSBY,
   HTML,
   JAVASCRIPT,
   MONGO,
@@ -38,6 +40,8 @@ const Icon: React.FC<Props> = ({ name }) => {
       return <Express />;
     case IconName.FACEBOOK:
       return <Facebook />;
+    case IconName.GATSBY:
+      return <Gatsby />;
     case IconName.HTML:
       return <Html />;
     case IconName.JAVASCRIPT:

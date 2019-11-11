@@ -1,0 +1,17 @@
+.title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 1rem 0 5rem 0;
+
+  &__label {
+    padding: 0.5rem;
+    font-size: 3rem;
+    font-weight: 300;
+  }
+
+  > .hr {
+    max-width: 30rem;
+    margin: auto;
+  }
+}
