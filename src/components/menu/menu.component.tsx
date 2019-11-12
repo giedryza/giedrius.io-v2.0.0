@@ -13,6 +13,7 @@ const Menu: React.FC = () => {
         onClick={() => setIsOpen(!isOpen)}
         type="button"
         id="menu-btn"
+        aria-label="Menu"
         aria-haspopup="true"
         aria-controls="menu-nav"
         aria-expanded={isOpen}

@@ -4,7 +4,11 @@
     top: 0;
     left: 0;
     display: flex;
-    width: 40rem;
+    width: 31rem;
+
+    @media only screen and (min-width: $bp__xs) {
+      width: 40rem;
+    }
   }
 
   &__data {
