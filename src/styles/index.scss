@@ -1,9 +1,11 @@
+@import 'variables/breakpoints';
 @import 'variables/colors';
+@import 'variables/outline';
 @import 'variables/shadows';
 
-@import 'global/base';
+@import 'mixins/global';
 
-@import 'mixins/btn-base';
+@import 'global/base';
 
 @import 'utils/container';
 @import 'utils/typography';
@@ -14,3 +16,5 @@
 @import '../components/hr/hr.styles.scss';
 @import '../components/experience/experience.styles.scss';
 @import '../components/avatar/avatar.styles.scss';
+@import '../components/menu/menu.styles.scss';
+@import '../components/contacts/contacts.styles.scss';

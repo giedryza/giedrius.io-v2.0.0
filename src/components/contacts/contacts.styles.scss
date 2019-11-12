@@ -1,0 +1,31 @@
+.contacts {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 40rem;
+    margin: auto;
+  }
+
+  &__link {
+    display: block;
+    transform: scale(1);
+    transition: transform 0.2s ease-in;
+    border: 1px solid transparent;
+    outline: none;
+
+    > svg {
+      display: block;
+      width: 4rem;
+      padding: 1rem;
+    }
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    &:focus {
+      border: $outline;
+    }
+  }
+}

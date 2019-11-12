@@ -1,0 +1,99 @@
+.menu {
+  position: fixed;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 200;
+
+  &__btn {
+    @include square(5rem);
+    position: relative;
+    padding: 1rem;
+    margin-left: 1rem;
+    border: 1px solid transparent;
+    background: transparent;
+    cursor: pointer;
+    z-index: 100;
+    transform: scale(1);
+    outline: none;
+
+    &:active {
+      background: $col__white;
+      box-shadow: $shadow__default;
+    }
+
+    &:focus {
+      border: $outline;
+    }
+
+    &.open {
+      transform: scale(0.8);
+      transition: transform 0.2s ease-in;
+      background: $col__white;
+      box-shadow: $shadow__default;
+    }
+
+    > svg {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__nav {
+    background: $col__white;
+    box-shadow: $shadow__active;
+    position: absolute;
+    top: 3rem;
+    left: 4rem;
+    z-index: 50;
+    padding: 1rem;
+    transform: scale(0);
+    transform-origin: top left;
+    visibility: hidden;
+
+    &.open {
+      animation: bounce-in 0.3s ease-in forwards;
+      visibility: visible;
+    }
+  }
+
+  &__nav-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+
+    > svg {
+      display: block;
+      width: 2rem;
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__nav-link {
+    display: block;
+    padding: 0.5rem;
+    border-bottom: 1px solid transparent;
+    outline: none;
+
+    &:focus {
+      border-bottom: $outline;
+    }
+
+    &:hover {
+      color: $col__black;
+    }
+  }
+}
+
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  75% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

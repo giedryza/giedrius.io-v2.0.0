@@ -1,2 +1,2 @@
-$shadow__card: 1px 2px 20px rgba(0, 0, 0, 0.1),
-  0px 50px 40px -50px rgba(0, 0, 0, 0.2);
+$shadow__default: 2px 4px 20px rgba($col__primary, 0.1);
+$shadow__active: 2px 4px 20px rgba($col__primary, 0.2);
