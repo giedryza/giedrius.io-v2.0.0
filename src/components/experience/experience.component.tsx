@@ -2,43 +2,13 @@ import React from 'react';
 import { format, formatDistance } from 'date-fns';
 
 import { isToday } from '../../utils/helpers';
+import { experience } from './experience.data';
 import Title from '../title/title.component';
 import Card from '../card/card.component';
-import { IconName } from '../icon/icon.component';
 
 const Experience: React.FC = () => {
-  const experience = [
-    {
-      company: 'NFQ',
-      web: 'https://www.nfq.lt',
-      from: new Date(2019, 9, 14),
-      to: new Date(),
-      jobTitle: 'Frontend Developer',
-      jobType: 'Full-time',
-      icon: IconName.NFQ,
-    },
-    {
-      company: 'Hometogo',
-      web: 'https://www.hometogo.com',
-      from: new Date(2019, 9, 14),
-      to: new Date(),
-      jobTitle: 'Frontend Developer',
-      jobType: 'Full-time',
-      icon: IconName.HOMETOGO,
-    },
-    {
-      company: 'Mediapark',
-      web: 'https://mediapark.lt',
-      from: new Date(2019, 3, 8),
-      to: new Date(2019, 9, 9),
-      jobTitle: 'React Developer',
-      jobType: 'Full-time',
-      icon: IconName.MEDIAPARK,
-    },
-  ];
-
   return (
-    <section className="experience">
+    <section className="experience section-container">
       <Title title="Experience" />
 
       <ul className="experience__container">

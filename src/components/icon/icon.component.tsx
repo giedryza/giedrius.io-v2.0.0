@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { ReactComponent as Avatar } from '../../assets/icons/avatar.svg';
 import { ReactComponent as Css } from '../../assets/icons/css.svg';
 import { ReactComponent as Express } from '../../assets/icons/express.svg';
 import { ReactComponent as Facebook } from '../../assets/icons/facebook.svg';
@@ -7,6 +8,7 @@ import { ReactComponent as Gatsby } from '../../assets/icons/gatsby.svg';
 import { ReactComponent as Hometogo } from '../../assets/icons/hometogo.svg';
 import { ReactComponent as Html } from '../../assets/icons/html.svg';
 import { ReactComponent as Javascript } from '../../assets/icons/javascript.svg';
+import { ReactComponent as Jest } from '../../assets/icons/jest.svg';
 import { ReactComponent as Mediapark } from '../../assets/icons/mediapark.svg';
 import { ReactComponent as Mongo } from '../../assets/icons/mongo.svg';
 import { ReactComponent as Nfq } from '../../assets/icons/nfq.svg';
@@ -17,6 +19,7 @@ import { ReactComponent as Sass } from '../../assets/icons/sass.svg';
 import { ReactComponent as Typescript } from '../../assets/icons/typescript.svg';
 
 export enum IconName {
+  AVATAR,
   CSS,
   EXPRESS,
   FACEBOOK,
@@ -24,6 +27,7 @@ export enum IconName {
   HOMETOGO,
   HTML,
   JAVASCRIPT,
+  JEST,
   MEDIAPARK,
   MONGO,
   NFQ,
@@ -40,6 +44,8 @@ interface Props {
 
 const Icon: React.FC<Props> = ({ name }) => {
   switch (name) {
+    case IconName.AVATAR:
+      return <Avatar />;
     case IconName.CSS:
       return <Css />;
     case IconName.EXPRESS:
@@ -54,6 +60,8 @@ const Icon: React.FC<Props> = ({ name }) => {
       return <Html />;
     case IconName.JAVASCRIPT:
       return <Javascript />;
+    case IconName.JEST:
+      return <Jest />;
     case IconName.MEDIAPARK:
       return <Mediapark />;
     case IconName.MONGO:
