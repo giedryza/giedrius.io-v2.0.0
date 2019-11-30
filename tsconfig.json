@@ -13,8 +13,6 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitAny": true,
-    "strictBindCallApply": true,
-    "strictNullChecks": true,
     "forceConsistentCasingInFileNames": true,
     "allowJs": true,
     "skipLibCheck": true,
