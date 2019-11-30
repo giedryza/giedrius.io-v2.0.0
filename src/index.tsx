@@ -4,7 +4,7 @@ import App from './components/app/app.component';
 import * as serviceWorker from './utils/serviceWorker';
 
 const app = <App />;
-const root = document.getElementById('root');
+const root = document.getElementById('root') as HTMLDivElement;
 
 ReactDOM.render(app, root);
 
