@@ -4,15 +4,14 @@
 
   &__btn {
     @include square(5rem);
-    position: relative;
     padding: 1rem;
-    margin-left: 1rem;
     border: 1px solid transparent;
     background: transparent;
     cursor: pointer;
-    z-index: 100;
     transform: scale(1);
     outline: none;
+    position: relative;
+    z-index: 20;
 
     &:active {
       background: $col__white;
@@ -42,8 +41,8 @@
     box-shadow: $shadow__active;
     position: absolute;
     top: 3rem;
-    left: 4rem;
-    z-index: 50;
+    left: 3rem;
+    z-index: 10;
     padding: 1rem;
     transform: scale(0);
     transform-origin: top left;
