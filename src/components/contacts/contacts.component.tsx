@@ -3,7 +3,7 @@ import React from 'react';
 import { contacts } from './contacts.data';
 import Title from '../title/title.component';
 import Icon from '../icon/icon.component';
-import Tooltip from '../tooltip/tooltip.component';
+import Tooltip, { Position } from '../tooltip/tooltip.component';
 
 const Contacts: React.FC = () => (
   <section className="contacts section-container">
@@ -12,7 +12,7 @@ const Contacts: React.FC = () => (
       <ul className="contacts__container">
         {contacts.map(contact => (
           <li key={contact.label}>
-            <Tooltip popup={contact.tooltip}>
+            <Tooltip popup={contact.tooltip} position={Position.TOP}>
               <a
                 href={contact.url}
                 className="contacts__link"

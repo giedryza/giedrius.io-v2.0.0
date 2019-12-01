@@ -3,7 +3,6 @@
 
   [role='tooltip'] {
     position: absolute;
-    bottom: 100%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 5;
@@ -20,14 +19,30 @@
     opacity: 0;
     transition: 0.2s opacity ease-in 0.4s;
 
+    &.--top {
+      bottom: 100%;
+
+      &::after {
+        top: 100%;
+        border-top-color: $col__black;
+      }
+    }
+
+    &.--bottom {
+      top: 100%;
+
+      &::after {
+        bottom: 100%;
+        border-bottom-color: $col__black;
+      }
+    }
+
     &::after {
       content: '';
       position: absolute;
-      top: 100%;
       left: 50%;
       transform: translateX(-50%);
       border: 5px solid transparent;
-      border-top-color: $col__black;
     }
   }
 
