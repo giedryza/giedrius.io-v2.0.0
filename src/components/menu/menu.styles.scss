@@ -24,7 +24,7 @@
 
     &[aria-expanded='true'] {
       transform: scale(0.8);
-      transition: transform 0.2s ease-in;
+      transition: transform $transition__md ease-in;
       background: $col__white;
       box-shadow: $shadow__default;
     }
