@@ -1,3 +1,4 @@
+@import 'variables/borders';
 @import 'variables/breakpoints';
 @import 'variables/colors';
 @import 'variables/outline';
@@ -18,4 +19,5 @@
 @import '../components/avatar/avatar.styles.scss';
 @import '../components/menu/menu.styles.scss';
 @import '../components/contacts/contacts.styles.scss';
-@import '../components/floatingContainer/floatingContainer.styles.scss';
+@import '../components/floater/floater.styles.scss';
+@import '../components/tooltip/tooltip.styles.scss';

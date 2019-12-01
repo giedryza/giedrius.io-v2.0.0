@@ -9,7 +9,7 @@ interface Props {
   position: Position;
 }
 
-const FloatingContainer: React.FC<Props> = ({ children, position }) => {
+const Floater: React.FC<Props> = ({ children, position }) => {
   const getPosition = (pos: Position) => {
     switch (pos) {
       case Position.TOP:
@@ -30,4 +30,4 @@ const FloatingContainer: React.FC<Props> = ({ children, position }) => {
   );
 };
 
-export default FloatingContainer;
+export default Floater;
