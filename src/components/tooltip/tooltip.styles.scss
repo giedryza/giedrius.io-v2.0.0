@@ -46,9 +46,7 @@
     }
   }
 
-  &:hover,
-  &:focus,
-  &:active {
+  &:hover {
     [role='tooltip'] {
       visibility: visible;
       opacity: 1;

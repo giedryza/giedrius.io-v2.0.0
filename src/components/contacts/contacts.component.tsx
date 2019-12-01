@@ -16,7 +16,7 @@ const Contacts: React.FC = () => (
               <a
                 href={contact.url}
                 className="contacts__link"
-                aria-label={contact.name}
+                aria-label={contact.tooltip}
                 target="_blank"
                 rel="noopener noreferrer"
               >
