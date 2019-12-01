@@ -7,24 +7,22 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "moduleResolution": "node",
     "sourceMap": true,
+    "strict": true,
     "resolveJsonModule": true,
     "downlevelIteration": true,
     "importHelpers": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noImplicitAny": true,
     "forceConsistentCasingInFileNames": true,
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "strict": true,
     "isolatedModules": true,
     "noEmit": true
   },
   "paths": {
     "*": ["*", "./src"]
   },
-  "include": ["src"],
   "exclude": ["node_modules", "build"]
 }

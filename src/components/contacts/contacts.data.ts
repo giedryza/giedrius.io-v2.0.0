@@ -8,7 +8,7 @@ export const contacts = [
     icon: IconName.FACEBOOK,
   },
   {
-    name: 'Linkedin',
+    name: 'LinkedIn',
     label: 'in/giedrius-blazulionis',
     url: 'https://www.linkedin.com/in/giedrius-blazulionis',
     icon: IconName.LINKEDIN,
