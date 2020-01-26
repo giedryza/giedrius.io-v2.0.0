@@ -11,7 +11,7 @@ export const contacts = [
   {
     name: 'LinkedIn',
     label: 'in/giedrius-blazulionis',
-    tooltip: 'View on LinkedIn',
+    tooltip: 'Connect on LinkedIn',
     url: 'https://www.linkedin.com/in/giedrius-blazulionis',
     icon: IconName.LINKEDIN,
   },
