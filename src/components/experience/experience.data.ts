@@ -35,6 +35,6 @@ export const experience = [
     to: new Date(),
     jobTitle: 'Frontend Developer',
     jobType: 'Freelance',
-    icon: IconName.FEATHER,
+    icon: IconName.GLOGO,
   },
 ];

@@ -5,7 +5,7 @@ import { ReactComponent as Close } from '../../assets/icons/close.svg';
 import { ReactComponent as Css } from '../../assets/icons/css.svg';
 import { ReactComponent as Express } from '../../assets/icons/express.svg';
 import { ReactComponent as Facebook } from '../../assets/icons/facebook.svg';
-import { ReactComponent as Feather } from '../../assets/icons/feather.svg';
+import { ReactComponent as GLogo } from '../../assets/icons/g-logo.svg';
 import { ReactComponent as Gatsby } from '../../assets/icons/gatsby.svg';
 import { ReactComponent as Github } from '../../assets/icons/github.svg';
 import { ReactComponent as Gmail } from '../../assets/icons/gmail.svg';
@@ -30,7 +30,7 @@ export enum IconName {
   CSS,
   EXPRESS,
   FACEBOOK,
-  FEATHER,
+  GLOGO,
   GATSBY,
   GITHUB,
   GMAIL,
@@ -66,8 +66,8 @@ const Icon: React.FC<Props> = ({ name }) => {
       return <Express />;
     case IconName.FACEBOOK:
       return <Facebook />;
-    case IconName.FEATHER:
-      return <Feather />;
+    case IconName.GLOGO:
+      return <GLogo />;
     case IconName.GATSBY:
       return <Gatsby />;
     case IconName.GITHUB:
