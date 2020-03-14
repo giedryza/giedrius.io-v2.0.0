@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Floater, { Position } from '../floater/floater.component';
 import Icon, { IconName } from '../icon/icon.component';
@@ -6,14 +6,16 @@ import { contacts } from '../contacts/contacts.data';
 import { IDs } from './menu.constants';
 
 const Menu: React.FC = () => {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleClick = () => setIsOpen(isOpen => !isOpen);
 
   return (
     <Floater position={Position.TOP}>
       <nav className="menu">
         <button
           className="menu__btn"
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={handleClick}
           type="button"
           id={IDs.menuButton}
           aria-label="Menu"

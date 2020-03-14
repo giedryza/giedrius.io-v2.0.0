@@ -3,42 +3,46 @@
   position: relative;
 
   &__btn {
-    @include square(5rem);
-    padding: 1rem;
+    @include square(5.5rem);
+    padding: 1.25rem;
     border: 1px solid transparent;
-    background: transparent;
+    background: $col__white;
+    box-shadow: $shadow__default;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     transform: scale(1);
     outline: none;
     position: relative;
-    z-index: 20;
+    z-index: 100;
+    border-radius: 50%;
 
-    &:active {
-      background: $col__white;
-      box-shadow: $shadow__default;
+    &:hover {
+      background: $col__gray-10;
     }
 
-    &:focus {
+    &:focus,
+    &:active {
       border: $outline;
     }
 
     &[aria-expanded='true'] {
       transform: scale(0.8);
       transition: transform $transition-duration__md ease-in;
-      background: $col__white;
-      box-shadow: $shadow__default;
     }
 
     > svg {
       display: block;
       width: 100%;
-      height: auto;
+      height: 100%;
     }
   }
 
   &__nav {
     background: $col__white;
-    box-shadow: $shadow__default;
+    box-shadow: $shadow__mini;
+    border-radius: $border-radius__lg;
     position: absolute;
     top: 3rem;
     left: 3rem;
