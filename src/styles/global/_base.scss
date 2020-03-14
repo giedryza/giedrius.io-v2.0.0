@@ -32,6 +32,11 @@ a {
   text-decoration: none;
 }
 
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
 ::selection {
   background: rgba($col__primary, 0.6);
   color: $col__white;
