@@ -2,9 +2,9 @@ import React from 'react';
 import { format, formatDistanceStrict } from 'date-fns';
 import { isToday } from '../../utils/helpers';
 import { experience } from './experience.data';
-import Title from '../title/title.component';
-import Card from '../card/card.component';
-import Legend from '../legend/legend.component';
+import Title from '../../components/title/title.component';
+import Bubble from '../../components/bubble/bubble.component';
+import Legend from '../../components/legend/legend.component';
 import { DATE_FORMAT } from './experience.constants';
 
 const Experience: React.FC = () => {
@@ -27,7 +27,7 @@ const Experience: React.FC = () => {
         {experience.map(exp => (
           <li className="experience__list-item" key={exp.company}>
             <article className="experience__card">
-              <Card label={exp.company} icon={exp.icon} link={exp.web} />
+              <Bubble label={exp.company} icon={exp.icon} link={exp.web} />
               <Legend
                 title={exp.jobTitle}
                 label={getLabel(exp.from, exp.to)}

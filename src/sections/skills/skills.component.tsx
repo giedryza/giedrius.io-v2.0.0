@@ -1,8 +1,8 @@
 import React from 'react';
 
 import { skills } from './skills.data';
-import Card from '../card/card.component';
-import Title from '../title/title.component';
+import Bubble from '../../components/bubble/bubble.component';
+import Title from '../../components/title/title.component';
 
 const Skills: React.FC = () => (
   <section className="skills section-container">
@@ -11,7 +11,7 @@ const Skills: React.FC = () => (
     <ul className="skills__container">
       {skills.map(skill => (
         <li key={skill.label}>
-          <Card icon={skill.icon} label={skill.label} />
+          <Bubble icon={skill.icon} label={skill.label} />
         </li>
       ))}
     </ul>

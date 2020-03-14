@@ -13,7 +13,7 @@ import { ReactComponent as Hometogo } from '../../assets/icons/hometogo.svg';
 import { ReactComponent as Html } from '../../assets/icons/html.svg';
 import { ReactComponent as Javascript } from '../../assets/icons/javascript.svg';
 import { ReactComponent as Jest } from '../../assets/icons/jest.svg';
-import { ReactComponent as Linkedin } from '../../assets/icons/linkedin.svg';
+import { ReactComponent as LinkedIn } from '../../assets/icons/linkedin.svg';
 import { ReactComponent as Mediapark } from '../../assets/icons/mediapark.svg';
 import { ReactComponent as Mongo } from '../../assets/icons/mongo.svg';
 import { ReactComponent as Nfq } from '../../assets/icons/nfq.svg';
@@ -25,29 +25,29 @@ import { ReactComponent as Sass } from '../../assets/icons/sass.svg';
 import { ReactComponent as Typescript } from '../../assets/icons/typescript.svg';
 
 export enum IconName {
-  AVATAR,
-  CLOSE,
-  CSS,
-  EXPRESS,
-  FACEBOOK,
-  GLOGO,
-  GATSBY,
-  GITHUB,
-  GMAIL,
-  HOMETOGO,
-  HTML,
-  JAVASCRIPT,
-  JEST,
-  LINKEDIN,
-  MEDIAPARK,
-  MONGO,
-  NFQ,
-  NODE,
-  PHONE,
-  REACT,
-  REDUX,
-  SASS,
-  TYPESCRIPT,
+  Avatar,
+  Close,
+  Css,
+  Express,
+  Facebook,
+  GLogo,
+  Gatsby,
+  Github,
+  Gmail,
+  Hometogo,
+  Html,
+  Javascript,
+  Jest,
+  LinkedIn,
+  Mediapark,
+  Mongo,
+  Nfq,
+  Node,
+  Phone,
+  ReactJs,
+  Redux,
+  Sass,
+  Typescript,
 }
 
 interface Props {
@@ -56,51 +56,51 @@ interface Props {
 
 const Icon: React.FC<Props> = ({ name }) => {
   switch (name) {
-    case IconName.AVATAR:
+    case IconName.Avatar:
       return <Avatar />;
-    case IconName.CLOSE:
+    case IconName.Close:
       return <Close />;
-    case IconName.CSS:
+    case IconName.Css:
       return <Css />;
-    case IconName.EXPRESS:
+    case IconName.Express:
       return <Express />;
-    case IconName.FACEBOOK:
+    case IconName.Facebook:
       return <Facebook />;
-    case IconName.GLOGO:
+    case IconName.GLogo:
       return <GLogo />;
-    case IconName.GATSBY:
+    case IconName.Gatsby:
       return <Gatsby />;
-    case IconName.GITHUB:
+    case IconName.Github:
       return <Github />;
-    case IconName.GMAIL:
+    case IconName.Gmail:
       return <Gmail />;
-    case IconName.HOMETOGO:
+    case IconName.Hometogo:
       return <Hometogo />;
-    case IconName.HTML:
+    case IconName.Html:
       return <Html />;
-    case IconName.JAVASCRIPT:
+    case IconName.Javascript:
       return <Javascript />;
-    case IconName.JEST:
+    case IconName.Jest:
       return <Jest />;
-    case IconName.LINKEDIN:
-      return <Linkedin />;
-    case IconName.MEDIAPARK:
+    case IconName.LinkedIn:
+      return <LinkedIn />;
+    case IconName.Mediapark:
       return <Mediapark />;
-    case IconName.MONGO:
+    case IconName.Mongo:
       return <Mongo />;
-    case IconName.NFQ:
+    case IconName.Nfq:
       return <Nfq />;
-    case IconName.NODE:
+    case IconName.Node:
       return <Node />;
-    case IconName.PHONE:
+    case IconName.Phone:
       return <Phone />;
-    case IconName.REACT:
+    case IconName.ReactJs:
       return <ReactJs />;
-    case IconName.REDUX:
+    case IconName.Redux:
       return <Redux />;
-    case IconName.SASS:
+    case IconName.Sass:
       return <Sass />;
-    case IconName.TYPESCRIPT:
+    case IconName.Typescript:
       return <Typescript />;
     default:
       return null;

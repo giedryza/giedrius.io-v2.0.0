@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import Floater, { Position } from '../floater/floater.component';
 import Icon, { IconName } from '../icon/icon.component';
-import { contacts } from '../contacts/contacts.data';
+import { contacts } from '../../sections/contacts/contacts.data';
 import { IDs } from './menu.constants';
 
 const Menu: React.FC = () => {
@@ -23,7 +23,7 @@ const Menu: React.FC = () => {
           aria-controls={IDs.menuNav}
           aria-expanded={isOpen}
         >
-          <Icon name={IconName.PHONE} />
+          <Icon name={IconName.Phone} />
         </button>
         <ul
           className="menu__nav"

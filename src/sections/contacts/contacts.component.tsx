@@ -1,9 +1,9 @@
 import React from 'react';
 
 import { contacts } from './contacts.data';
-import Title from '../title/title.component';
-import Icon from '../icon/icon.component';
-import Tooltip, { Position } from '../tooltip/tooltip.component';
+import Title from '../../components/title/title.component';
+import Icon from '../../components/icon/icon.component';
+import Tooltip, { Position } from '../../components/tooltip/tooltip.component';
 
 const Contacts: React.FC = () => (
   <section className="contacts section-container">

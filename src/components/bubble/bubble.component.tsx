@@ -11,7 +11,7 @@ interface Props {
   buttonProps?: React.ButtonHTMLAttributes<HTMLButtonElement>;
 }
 
-const Card: React.FC<Props> = ({
+const Bubble: React.FC<Props> = ({
   icon,
   label,
   link,
@@ -48,4 +48,4 @@ const Card: React.FC<Props> = ({
   );
 };
 
-export default Card;
+export default Bubble;

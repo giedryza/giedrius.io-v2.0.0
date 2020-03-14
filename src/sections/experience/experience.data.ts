@@ -1,4 +1,4 @@
-import { IconName } from '../icon/icon.component';
+import { IconName } from '../../components/icon/icon.component';
 
 export const experience = [
   {
@@ -8,7 +8,7 @@ export const experience = [
     to: new Date(),
     jobTitle: 'Frontend Developer',
     jobType: 'Full-time',
-    icon: IconName.NFQ,
+    icon: IconName.Nfq,
   },
   {
     company: 'Hometogo',
@@ -17,7 +17,7 @@ export const experience = [
     to: new Date(),
     jobTitle: 'Frontend Developer',
     jobType: 'Full-time',
-    icon: IconName.HOMETOGO,
+    icon: IconName.Hometogo,
   },
   {
     company: 'Mediapark',
@@ -26,7 +26,7 @@ export const experience = [
     to: new Date(2019, 9, 9),
     jobTitle: 'React Developer',
     jobType: 'Full-time',
-    icon: IconName.MEDIAPARK,
+    icon: IconName.Mediapark,
   },
   {
     company: 'giedrius.io',
@@ -35,6 +35,6 @@ export const experience = [
     to: new Date(),
     jobTitle: 'Frontend Developer',
     jobType: 'Freelance',
-    icon: IconName.GLOGO,
+    icon: IconName.GLogo,
   },
 ];
