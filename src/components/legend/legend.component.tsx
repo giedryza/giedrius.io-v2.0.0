@@ -24,6 +24,7 @@ const Legend: React.FC<Props> = ({
 }) => (
   <div className="legend" data-arrow={arrowPosition}>
     <h3 className="heading__md">{title}</h3>
+    <div className="legend__hr" />
     <p className="body__lg">{label}</p>
     <p className="body__lg">{sublabel}</p>
     <p className="body__md">{meta}</p>
