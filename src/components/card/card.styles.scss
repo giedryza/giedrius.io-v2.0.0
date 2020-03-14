@@ -36,7 +36,10 @@
     border: 1px solid transparent;
     background: transparent;
     outline: none;
-    cursor: pointer;
+
+    &[href] {
+      cursor: pointer;
+    }
 
     &:hover,
     &:focus,
@@ -46,7 +49,7 @@
 
         > .card__label {
           visibility: visible;
-          opacity: 1;
+          opacity: 0.9;
         }
       }
     }

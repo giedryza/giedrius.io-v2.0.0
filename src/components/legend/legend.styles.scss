@@ -13,41 +13,4 @@
     background: $col__gray-40;
     margin: 0.75rem 0;
   }
-
-  // &::after {
-  //   content: '';
-  //   position: absolute;
-  //   width: 2rem;
-  //   height: 2rem;
-  //   background: $col__white;
-  //   transform: rotate(45deg);
-  //   border-radius: $border-radius__md;
-  // }
-
-  // &[data-arrow='right'] {
-  //   &::after {
-  //     top: 3rem;
-  //     left: calc(100% - (2rem / 2));
-  //   }
-  // }
-  // &[data-arrow='left'] {
-  //   &::after {
-  //     top: 3rem;
-  //     right: calc(100% - (2rem / 2));
-  //   }
-  // }
-  // &[data-arrow='top'] {
-  //   &::after {
-  //     bottom: calc(100% - (2rem / 2));
-  //     left: 50%;
-  //     transform: translateX(-50%) rotate(45deg);
-  //   }
-  // }
-  // &[data-arrow='bottom'] {
-  //   &::after {
-  //     top: calc(100% - (2rem / 2));
-  //     left: 50%;
-  //     transform: translateX(-50%) rotate(45deg);
-  //   }
-  // }
 }
