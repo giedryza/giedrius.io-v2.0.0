@@ -23,9 +23,10 @@ const Experience: React.FC = () => {
     <section className="experience section-container">
       <Title title="Experience" />
 
-      <ul className="experience__container">
+      <ul>
         {experience.map(exp => (
           <li className="experience__list-item" key={exp.company}>
+            <div className="experience__placeholder" />
             <article className="experience__card">
               <Bubble label={exp.company} icon={exp.icon} link={exp.web} />
               <Legend

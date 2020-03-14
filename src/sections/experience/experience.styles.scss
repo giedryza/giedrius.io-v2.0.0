@@ -1,77 +1,39 @@
 .experience {
   &__card {
-    position: relative;
-    top: 0;
-    left: 0;
     display: flex;
-    width: 31rem;
+    flex-basis: 100%;
 
     @media only screen and (min-width: $bp__xs) {
-      width: 40rem;
+      flex-basis: 85%;
+    }
+
+    @media only screen and (min-width: $bp__sm) {
+      flex-basis: 50%;
+    }
+  }
+
+  &__placeholder {
+    flex-basis: 0%;
+
+    @media only screen and (min-width: $bp__xs) {
+      flex-basis: 15%;
+    }
+
+    @media only screen and (min-width: $bp__sm) {
+      flex-basis: 50%;
     }
   }
 
   &__list-item {
-    position: relative;
-    width: 1px;
-    background: $col__black;
-    margin: 0 5%;
-
-    @media only screen and (min-width: $bp__xs) {
-      margin: 0 20%;
-    }
+    display: flex;
 
     @media only screen and (min-width: $bp__sm) {
-      margin: 0 auto;
-    }
-
-    &:hover {
-      &::after {
-        background: $col__black;
-      }
-    }
-
-    &::after {
-      content: '';
-      position: absolute;
-      top: 40%;
-      left: 50%;
-      transform: translate3d(-50%, -50%, 0);
-      @include square(1.5rem);
-      background: $col__white;
-      border: 1px solid $col__black;
-      border-radius: 50%;
-    }
-
-    &:first-child,
-    &:last-child {
-      &::before {
-        content: '';
-        position: absolute;
-        width: 1px;
-        background: $col__white;
-      }
-    }
-
-    &:first-child {
-      &::before {
-        top: 0;
-        height: 4rem;
-      }
-    }
-
-    &:last-child {
-      &::before {
-        bottom: 0;
-        height: 6rem;
-      }
-    }
-
-    @media only screen and (min-width: $bp__sm) {
-      &:nth-child(odd) > .experience__card {
-        transform: translateX(-100%);
+      &:nth-child(odd) {
         flex-direction: row-reverse;
-        text-align: right;
+
+        > .experience__card {
+          flex-direction: row-reverse;
+        }
       }
     }
   }
