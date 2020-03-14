@@ -1,4 +1,4 @@
-export const isToday = (date: Date): boolean => {
+export const isToday = (date: Date) => {
   const today = new Date();
 
   return (
@@ -7,3 +7,5 @@ export const isToday = (date: Date): boolean => {
     date.getFullYear() === today.getFullYear()
   );
 };
+
+export const isEven = (n: number) => n % 2 === 0;

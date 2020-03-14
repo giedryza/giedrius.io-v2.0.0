@@ -17,7 +17,7 @@
     white-space: nowrap;
     visibility: hidden;
     opacity: 0;
-    transition: $transition__md opacity ease-in 0.4s;
+    transition: $transition-duration__md opacity ease-in 0.4s;
 
     &.--top {
       bottom: 100%;

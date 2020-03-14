@@ -1,42 +1,61 @@
 .card {
   margin: 1rem;
-  width: 10rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
-
-  @media only screen and (min-width: $bp__xs) {
-    width: 12rem;
-  }
-
-  &:hover {
-    > svg {
-      box-shadow: $shadow__active;
-    }
-
-    > .card__label {
-      transform: scale(1);
-    }
-  }
+  justify-content: center;
+  @include square(8.5rem);
+  border: 1px solid transparent;
+  border-radius: 50%;
+  box-shadow: $shadow__default;
+  background: $col__white;
+  position: relative;
 
   > svg {
     display: block;
-    padding: 1rem;
-    object-fit: contain;
-    object-position: center center;
-    box-shadow: $shadow__default;
-    border: 1px solid transparent;
-    @include square(7.5rem);
-
-    @media only screen and (min-width: $bp__xs) {
-      @include square(10rem);
-    }
+    padding: 1.75rem;
+    width: 100%;
+    height: 100%;
   }
 
   &__label {
-    text-align: center;
-    margin-top: 0.5rem;
-    transform: scale(0);
-    transition: transform $transition__md ease-in;
+    position: absolute;
+    z-index: 50;
+    color: $col__white;
+    background: $col__black;
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    top: 95%;
+    visibility: hidden;
+    opacity: 0;
+    transition: $transition-duration__md opacity ease-in $transition-delay__md;
+  }
+
+  &__wrapper {
+    border: 1px solid transparent;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+
+    &:hover,
+    &:focus,
+    &:active {
+      > .card {
+        background: $col__gray-10;
+
+        > .card__label {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+
+    &:focus,
+    &:active {
+      > .card {
+        border: $outline;
+      }
+    }
   }
 }
