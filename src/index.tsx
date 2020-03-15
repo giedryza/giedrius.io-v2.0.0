@@ -4,7 +4,7 @@ import * as serviceWorker from './utils/serviceWorker';
 import { Env } from './types/env';
 import App from './app';
 
-if (process.env.NODE_ENV !== Env.prod) {
+if (process.env.NODE_ENV === Env.dev) {
   const TIMING_DELAY = 1000;
   // eslint-disable-next-line global-require
   const axe = require('react-axe');
