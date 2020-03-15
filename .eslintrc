@@ -37,15 +37,15 @@
     ],
     "react/jsx-one-expression-per-line": "off",
     "react/prop-types": "off",
-    "@typescript-eslint/no-unused-vars": [
-      "error",
-      { "ignoreRestSiblings": true }
-    ],
     "react/jsx-props-no-spreading": [
       "warn",
       {
         "html": "ignore"
       }
+    ],
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      { "ignoreRestSiblings": true }
     ]
   }
 }
