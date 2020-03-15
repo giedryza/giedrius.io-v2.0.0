@@ -1,5 +1,4 @@
-.card {
-  margin: 1rem;
+.bubble {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,7 +28,6 @@
     top: 95%;
     visibility: hidden;
     opacity: 0;
-    transition: $transition-duration__md opacity ease-in $transition-delay__md;
   }
 
   &__wrapper {
@@ -44,10 +42,12 @@
     &:hover,
     &:focus,
     &:active {
-      > .card {
+      > .bubble {
         background: $col__gray-10;
 
-        > .card__label {
+        > .bubble__label {
+          transition: $transition-duration__md opacity ease-in
+            $transition-delay__md;
           visibility: visible;
           opacity: 0.9;
         }
@@ -56,7 +56,7 @@
 
     &:focus,
     &:active {
-      > .card {
+      > .bubble {
         border: $border__outline;
       }
     }

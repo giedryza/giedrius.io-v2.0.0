@@ -1,6 +1,7 @@
 .experience {
   &__card {
     display: flex;
+    align-items: flex-start;
     flex-basis: 100%;
 
     @media only screen and (min-width: $bp__xs) {
@@ -9,6 +10,10 @@
 
     @media only screen and (min-width: $bp__sm) {
       flex-basis: 50%;
+    }
+
+    > * {
+      margin: 1rem;
     }
   }
 

@@ -19,15 +19,15 @@ const Bubble: React.FC<Props> = ({
   buttonProps,
 }) => {
   const bubble = () => (
-    <div className="card">
+    <div className="bubble">
       <Icon name={icon} />
-      <span className="card__label">{label}</span>
+      <span className="bubble__label">{label}</span>
     </div>
   );
 
   return link ? (
     <a
-      className="card__wrapper"
+      className="bubble__wrapper"
       href={link}
       target="_blank"
       rel="noopener noreferrer"
@@ -38,7 +38,7 @@ const Bubble: React.FC<Props> = ({
     </a>
   ) : (
     <button
-      className="card__wrapper"
+      className="bubble__wrapper"
       type="button"
       onClick={onClick}
       aria-label={label}

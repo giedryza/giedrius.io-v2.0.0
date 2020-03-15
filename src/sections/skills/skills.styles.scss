@@ -3,5 +3,13 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
+    > * {
+      margin: 1rem 2rem;
+
+      @media only screen and (min-width: $bp__xs) {
+        margin: 1rem;
+      }
+    }
   }
 }
