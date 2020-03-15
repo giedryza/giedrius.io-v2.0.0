@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Icon, { IconName } from '../icon/icon.component';
 
 interface Props {
@@ -32,6 +31,7 @@ const Bubble: React.FC<Props> = ({
       href={link}
       target="_blank"
       rel="noopener noreferrer"
+      aria-label={label}
       {...linkProps}
     >
       {bubble()}
@@ -41,6 +41,7 @@ const Bubble: React.FC<Props> = ({
       className="card__wrapper"
       type="button"
       onClick={onClick}
+      aria-label={label}
       {...buttonProps}
     >
       {bubble()}
