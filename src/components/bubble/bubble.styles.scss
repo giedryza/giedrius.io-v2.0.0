@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   @include square(8.5rem);
-  border: 1px solid transparent;
+  border: $border__none;
   border-radius: 50%;
   box-shadow: $shadow__default;
   background: $col__white;
@@ -33,7 +33,7 @@
   }
 
   &__wrapper {
-    border: 1px solid transparent;
+    border: $border__none;
     background: transparent;
     outline: none;
 
@@ -57,7 +57,7 @@
     &:focus,
     &:active {
       > .card {
-        border: $outline;
+        border: $border__outline;
       }
     }
   }

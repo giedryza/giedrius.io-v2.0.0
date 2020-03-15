@@ -5,7 +5,7 @@
   &__btn {
     @include square(5.5rem);
     padding: 1.25rem;
-    border: 1px solid transparent;
+    border: $border__none;
     background: $col__white;
     box-shadow: $shadow__default;
     display: flex;
@@ -22,9 +22,12 @@
       background: $col__gray-10;
     }
 
-    &:focus,
-    &:active {
-      border: $outline;
+    &:focus {
+      border: $border__outline;
+
+      &:hover {
+        border: $border__none;
+      }
     }
 
     &[aria-expanded='true'] {
@@ -73,11 +76,11 @@
   &__nav-link {
     display: block;
     padding: 0.5rem;
-    border-bottom: 1px solid transparent;
+    border-bottom: $border__none;
     outline: none;
 
     &:focus {
-      border-bottom: $outline;
+      border-bottom: $border__outline;
     }
 
     &:hover {

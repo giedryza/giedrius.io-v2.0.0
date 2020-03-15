@@ -11,7 +11,7 @@
     display: block;
     transform: scale(1);
     transition: transform $transition-duration__md ease-in;
-    border: 1px solid transparent;
+    border: $border__none;
     outline: none;
 
     > svg {
@@ -25,7 +25,7 @@
     }
 
     &:focus {
-      border: $outline;
+      border: $border__outline;
     }
   }
 }
