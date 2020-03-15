@@ -2,7 +2,7 @@
 
 *,
 *::before,
-::after {
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
@@ -24,8 +24,19 @@ body {
   background: $col__gray-10;
 }
 
+section {
+  &:not(:last-child) {
+    margin-bottom: 6rem;
+  }
+  margin-bottom: 3rem;
+}
+
 ul {
   list-style: none;
+}
+
+h1 {
+  margin: 0;
 }
 
 a {

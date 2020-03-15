@@ -20,7 +20,7 @@ const Experience: React.FC = () => {
     })}`;
 
   return (
-    <section className="experience section-container">
+    <section className="experience">
       <Title title="Experience" />
 
       <ul>

@@ -5,7 +5,7 @@ import Bubble from '../../components/bubble/bubble.component';
 import Title from '../../components/title/title.component';
 
 const Skills: React.FC = () => (
-  <section className="skills section-container">
+  <section className="skills">
     <Title title="Skills" />
 
     <ul className="skills__container">

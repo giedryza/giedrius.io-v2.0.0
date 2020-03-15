@@ -6,7 +6,7 @@ import Icon from '../../components/icon/icon.component';
 import Tooltip, { Position } from '../../components/tooltip/tooltip.component';
 
 const Contacts: React.FC = () => (
-  <section className="contacts section-container">
+  <section className="contacts">
     <Title title="Contacts" />
     <nav>
       <ul className="contacts__container">
