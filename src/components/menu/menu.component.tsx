@@ -8,7 +8,7 @@ import { IDs } from './menu.constants';
 const Menu: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleClick = () => setIsOpen(isOpen => !isOpen);
+  const handleClick = () => setIsOpen(prevIsOpen => !prevIsOpen);
 
   return (
     <Floater position={Position.TOP}>

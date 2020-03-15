@@ -30,7 +30,6 @@
     "spaced-comment": "off",
     "consistent-return": "off",
     "no-nested-ternary": "off",
-    "no-shadow": "off",
     "import/prefer-default-export": "off",
     "react/jsx-filename-extension": [
       "warn",
