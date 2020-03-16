@@ -1,6 +1,7 @@
 import React from 'react';
-
 import Hr from '../hr/hr.component';
+
+const LABEL_CLASS = 'title__label heading__lg';
 
 interface Props {
   title: string;
@@ -10,9 +11,9 @@ interface Props {
 const Title: React.FC<Props> = ({ title, h1 = false }) => (
   <header className="title">
     {h1 ? (
-      <h1 className="title__label heading__lg">{title}</h1>
+      <h1 className={LABEL_CLASS}>{title}</h1>
     ) : (
-      <h2 className="title__label heading__lg">{title}</h2>
+      <h2 className={LABEL_CLASS}>{title}</h2>
     )}
     <Hr />
   </header>

@@ -12,7 +12,7 @@ const Menu: React.FC = () => {
 
   return (
     <Floater position={Position.TOP}>
-      <nav className="menu" aria-label="main navigation">
+      <nav className="menu" aria-labelledby={IDs.menuButton}>
         <button
           className="menu__btn"
           onClick={handleClick}

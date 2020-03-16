@@ -18,7 +18,7 @@ export const contacts = [
   {
     name: 'GitHub',
     label: 'github.com/giedryza',
-    tooltip: 'Inspect code on GitHub',
+    tooltip: 'Inspect on GitHub',
     url: 'https://github.com/giedryza',
     icon: IconName.Github,
   },

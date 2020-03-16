@@ -6,26 +6,4 @@
     max-width: 40rem;
     margin: auto;
   }
-
-  &__link {
-    display: block;
-    transform: scale(1);
-    transition: transform $transition-duration__md ease-in;
-    border: $border__none;
-    outline: none;
-
-    > svg {
-      display: block;
-      width: 4rem;
-      padding: 1rem;
-    }
-
-    &:hover {
-      transform: scale(1.2);
-    }
-
-    &:focus {
-      border: $border__outline;
-    }
-  }
 }

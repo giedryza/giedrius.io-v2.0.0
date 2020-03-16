@@ -1,6 +1,16 @@
 import React from 'react';
 import Icon, { IconName } from '../icon/icon.component';
 
+export enum BubbleSize {
+  Big = 'big',
+  Small = 'small',
+}
+
+export enum LabelPosition {
+  Top = 'top',
+  Bottom = 'bottom',
+}
+
 interface Props {
   icon: IconName;
   label: string;
@@ -8,6 +18,8 @@ interface Props {
   onClick?: () => void;
   linkProps?: React.AnchorHTMLAttributes<HTMLAnchorElement>;
   buttonProps?: React.ButtonHTMLAttributes<HTMLButtonElement>;
+  bubbleSize?: BubbleSize;
+  labelPosition?: LabelPosition;
 }
 
 const Bubble: React.FC<Props> = ({
@@ -17,11 +29,13 @@ const Bubble: React.FC<Props> = ({
   onClick,
   linkProps,
   buttonProps,
+  bubbleSize = BubbleSize.Big,
+  labelPosition = LabelPosition.Bottom,
 }) => {
   const bubble = () => (
-    <div className="bubble">
+    <div className={`bubble ${bubbleSize}`}>
       <Icon name={icon} />
-      <span className="bubble__label">{label}</span>
+      <span className={`bubble__label ${labelPosition}`}>{label}</span>
     </div>
   );
 
