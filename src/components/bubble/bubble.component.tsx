@@ -18,24 +18,36 @@ interface Props {
   onClick?: () => void;
   linkProps?: React.AnchorHTMLAttributes<HTMLAnchorElement>;
   buttonProps?: React.ButtonHTMLAttributes<HTMLButtonElement>;
+  transparent?: boolean;
   bubbleSize?: BubbleSize;
   labelPosition?: LabelPosition;
 }
 
-const Bubble: React.FC<Props> = ({
+const BubbleButton: React.FC<Props> = ({
   icon,
   label,
   link,
   onClick,
   linkProps,
   buttonProps,
+  transparent = false,
   bubbleSize = BubbleSize.Big,
   labelPosition = LabelPosition.Bottom,
 }) => {
-  const bubble = () => (
-    <div className={`bubble ${bubbleSize}`}>
+  const bubbleClassNames = [
+    'bubble',
+    bubbleSize,
+    transparent ? 'transparent' : '',
+  ]
+    .join(' ')
+    .trim();
+
+  const labelClassNames = ['bubble__label', labelPosition].join(' ').trim();
+
+  const Bubble = (
+    <div className={bubbleClassNames}>
       <Icon name={icon} />
-      <span className={`bubble__label ${labelPosition}`}>{label}</span>
+      <span className={labelClassNames}>{label}</span>
     </div>
   );
 
@@ -48,7 +60,7 @@ const Bubble: React.FC<Props> = ({
       aria-label={label}
       {...linkProps}
     >
-      {bubble()}
+      {Bubble}
     </a>
   ) : (
     <button
@@ -58,9 +70,9 @@ const Bubble: React.FC<Props> = ({
       aria-label={label}
       {...buttonProps}
     >
-      {bubble()}
+      {Bubble}
     </button>
   );
 };
 
-export default Bubble;
+export default BubbleButton;

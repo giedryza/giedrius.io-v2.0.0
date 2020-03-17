@@ -1,5 +1,5 @@
 $bubble-lg: 8.5rem;
-$bubble-sm: 4rem;
+$bubble-sm: 4.5rem;
 
 .bubble {
   display: flex;
@@ -21,6 +21,17 @@ $bubble-sm: 4rem;
     @include square($bubble-lg);
     > svg {
       padding: 1.75rem;
+    }
+  }
+  &.transparent {
+    box-shadow: none;
+    background: transparent;
+    > svg {
+      transform: scale(1);
+      transition: $transition-duration__md transform ease-in;
+      &:hover {
+        transform: scale(1.2);
+      }
     }
   }
 

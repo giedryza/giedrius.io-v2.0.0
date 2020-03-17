@@ -20,6 +20,7 @@ const Contacts: React.FC = () => (
               icon={contact.icon}
               bubbleSize={BubbleSize.Small}
               labelPosition={LabelPosition.Top}
+              transparent
             />
           </li>
         ))}
