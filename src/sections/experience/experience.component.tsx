@@ -1,11 +1,11 @@
 import React from 'react';
 import { format, formatDistanceStrict } from 'date-fns';
-import { isToday } from '../../utils/helpers';
-import { experience } from './experience.data';
-import Title from '../../components/title/title.component';
-import Bubble from '../../components/bubble/bubble.component';
-import Legend from '../../components/legend/legend.component';
-import { DATE_FORMAT } from './experience.constants';
+import { isToday } from 'utils/helpers';
+import { experience } from 'sections/experience/experience.data';
+import { DATE_FORMAT } from 'sections/experience/experience.constants';
+import Title from 'components/title/title.component';
+import Bubble from 'components/bubble/bubble.component';
+import Legend from 'components/legend/legend.component';
 
 const Experience: React.FC = () => {
   const getLabel = (from: Date, to: Date) =>

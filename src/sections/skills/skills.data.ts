@@ -1,4 +1,4 @@
-import { IconName } from '../../components/icon/icon.component';
+import { IconName } from 'components/icon/icon.component';
 
 export const skills = [
   { label: 'Javascript', icon: IconName.Javascript },

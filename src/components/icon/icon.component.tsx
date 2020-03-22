@@ -1,28 +1,28 @@
 import React from 'react';
 
-import { ReactComponent as IAvatar } from '../../assets/icons/avatar.svg';
-import { ReactComponent as IClose } from '../../assets/icons/close.svg';
-import { ReactComponent as ICss } from '../../assets/icons/css.svg';
-import { ReactComponent as IExpress } from '../../assets/icons/express.svg';
-import { ReactComponent as IFacebook } from '../../assets/icons/facebook.svg';
-import { ReactComponent as IGLogo } from '../../assets/icons/g-logo.svg';
-import { ReactComponent as IGatsby } from '../../assets/icons/gatsby.svg';
-import { ReactComponent as IGithub } from '../../assets/icons/github.svg';
-import { ReactComponent as IGmail } from '../../assets/icons/gmail.svg';
-import { ReactComponent as IHometogo } from '../../assets/icons/hometogo.svg';
-import { ReactComponent as IHtml } from '../../assets/icons/html.svg';
-import { ReactComponent as IJavascript } from '../../assets/icons/javascript.svg';
-import { ReactComponent as IJest } from '../../assets/icons/jest.svg';
-import { ReactComponent as ILinkedIn } from '../../assets/icons/linkedin.svg';
-import { ReactComponent as IMediapark } from '../../assets/icons/mediapark.svg';
-import { ReactComponent as IMongo } from '../../assets/icons/mongo.svg';
-import { ReactComponent as INfq } from '../../assets/icons/nfq.svg';
-import { ReactComponent as INode } from '../../assets/icons/node.svg';
-import { ReactComponent as IPhone } from '../../assets/icons/phone.svg';
-import { ReactComponent as IReactJs } from '../../assets/icons/react.svg';
-import { ReactComponent as IRedux } from '../../assets/icons/redux.svg';
-import { ReactComponent as ISass } from '../../assets/icons/sass.svg';
-import { ReactComponent as ITypescript } from '../../assets/icons/typescript.svg';
+import { ReactComponent as IAvatar } from 'assets/icons/avatar.svg';
+import { ReactComponent as IClose } from 'assets/icons/close.svg';
+import { ReactComponent as ICss } from 'assets/icons/css.svg';
+import { ReactComponent as IExpress } from 'assets/icons/express.svg';
+import { ReactComponent as IFacebook } from 'assets/icons/facebook.svg';
+import { ReactComponent as IGLogo } from 'assets/icons/g-logo.svg';
+import { ReactComponent as IGatsby } from 'assets/icons/gatsby.svg';
+import { ReactComponent as IGithub } from 'assets/icons/github.svg';
+import { ReactComponent as IGmail } from 'assets/icons/gmail.svg';
+import { ReactComponent as IHometogo } from 'assets/icons/hometogo.svg';
+import { ReactComponent as IHtml } from 'assets/icons/html.svg';
+import { ReactComponent as IJavascript } from 'assets/icons/javascript.svg';
+import { ReactComponent as IJest } from 'assets/icons/jest.svg';
+import { ReactComponent as ILinkedIn } from 'assets/icons/linkedin.svg';
+import { ReactComponent as IMediapark } from 'assets/icons/mediapark.svg';
+import { ReactComponent as IMongo } from 'assets/icons/mongo.svg';
+import { ReactComponent as INfq } from 'assets/icons/nfq.svg';
+import { ReactComponent as INode } from 'assets/icons/node.svg';
+import { ReactComponent as IPhone } from 'assets/icons/phone.svg';
+import { ReactComponent as IReactJs } from 'assets/icons/react.svg';
+import { ReactComponent as IRedux } from 'assets/icons/redux.svg';
+import { ReactComponent as ISass } from 'assets/icons/sass.svg';
+import { ReactComponent as ITypescript } from 'assets/icons/typescript.svg';
 
 export enum IconName {
   Avatar,

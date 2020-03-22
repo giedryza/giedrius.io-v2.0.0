@@ -1,5 +1,5 @@
 import React from 'react';
-import Hr from '../hr/hr.component';
+import Hr from 'components/hr/hr.component';
 
 const LABEL_CLASS = 'title__label heading__lg';
 

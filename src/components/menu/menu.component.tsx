@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
-
-import Floater, { Position } from '../floater/floater.component';
-import Icon, { IconName } from '../icon/icon.component';
-import { contacts } from '../../sections/contacts/contacts.data';
-import { IDs } from './menu.constants';
+import Floater, { Position } from 'components/floater/floater.component';
+import Icon, { IconName } from 'components/icon/icon.component';
+import { contacts } from 'sections/contacts/contacts.data';
+import { IDs } from 'components/menu/menu.constants';
 
 const Menu: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleClick = () => setIsOpen(prevIsOpen => !prevIsOpen);
+  const handleClick = () => setIsOpen(prevState => !prevState);
 
   return (
     <Floater position={Position.TOP}>

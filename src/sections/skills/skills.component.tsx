@@ -1,8 +1,7 @@
 import React from 'react';
-
-import { skills } from './skills.data';
-import Bubble from '../../components/bubble/bubble.component';
-import Title from '../../components/title/title.component';
+import { skills } from 'sections/skills/skills.data';
+import Bubble from 'components/bubble/bubble.component';
+import Title from 'components/title/title.component';
 
 const Skills: React.FC = () => (
   <section className="skills">

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import * as serviceWorker from './utils/serviceWorker';
-import App from './app';
+import * as serviceWorker from 'utils/serviceWorker';
+import App from 'app';
 
 const app = <App />;
 const root = document.getElementById('root') as HTMLDivElement;

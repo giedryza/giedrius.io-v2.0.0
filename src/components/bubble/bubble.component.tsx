@@ -1,5 +1,5 @@
 import React from 'react';
-import Icon, { IconName } from '../icon/icon.component';
+import Icon, { IconName } from 'components/icon/icon.component';
 
 export enum BubbleSize {
   Big = 'big',

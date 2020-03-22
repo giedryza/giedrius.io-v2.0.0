@@ -1,11 +1,10 @@
 import React from 'react';
-
-import { contacts } from './contacts.data';
-import Title from '../../components/title/title.component';
+import { contacts } from 'sections/contacts/contacts.data';
+import Title from 'components/title/title.component';
 import Bubble, {
   BubbleSize,
   LabelPosition,
-} from '../../components/bubble/bubble.component';
+} from 'components/bubble/bubble.component';
 
 const Contacts: React.FC = () => (
   <section className="contacts">
