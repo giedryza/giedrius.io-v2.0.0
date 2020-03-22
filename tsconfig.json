@@ -4,11 +4,7 @@
     "module": "esnext",
     "target": "es5",
     "jsx": "react",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "moduleResolution": "node",
     "sourceMap": true,
     "strict": true,
@@ -26,16 +22,8 @@
     "noEmit": true
   },
   "paths": {
-    "*": [
-      "*",
-      "./src"
-    ]
+    "*": ["*", "./src"]
   },
-  "exclude": [
-    "node_modules",
-    "build"
-  ],
-  "include": [
-    "src"
-  ]
+  "exclude": ["node_modules", "build"],
+  "include": ["src"]
 }
