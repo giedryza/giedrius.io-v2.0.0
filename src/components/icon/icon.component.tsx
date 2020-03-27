@@ -12,7 +12,7 @@ import { ReactComponent as IGithub } from 'assets/icons/github.svg';
 import { ReactComponent as IGmail } from 'assets/icons/gmail.svg';
 import { ReactComponent as IHometogo } from 'assets/icons/hometogo.svg';
 import { ReactComponent as IHtml } from 'assets/icons/html.svg';
-import { ReactComponent as IJavascript } from 'assets/icons/javascript.svg';
+import { ReactComponent as IJavaScript } from 'assets/icons/javascript.svg';
 import { ReactComponent as IJest } from 'assets/icons/jest.svg';
 import { ReactComponent as ILinkedIn } from 'assets/icons/linkedin.svg';
 import { ReactComponent as IMediapark } from 'assets/icons/mediapark.svg';
@@ -39,7 +39,7 @@ export enum IconName {
   Gmail,
   Hometogo,
   Html,
-  Javascript,
+  JavaScript,
   Jest,
   LinkedIn,
   Mediapark,
@@ -84,8 +84,8 @@ const Icon: React.FC<Props> = ({ name }) => {
       return <IHometogo />;
     case IconName.Html:
       return <IHtml />;
-    case IconName.Javascript:
-      return <IJavascript />;
+    case IconName.JavaScript:
+      return <IJavaScript />;
     case IconName.Jest:
       return <IJest />;
     case IconName.LinkedIn:

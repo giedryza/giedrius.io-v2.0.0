@@ -1,7 +1,7 @@
 import { IconName } from 'components/icon/icon.component';
 
 export const skills = [
-  { label: 'Javascript', icon: IconName.Javascript },
+  { label: 'JavaScript', icon: IconName.JavaScript },
   { label: 'React', icon: IconName.ReactJs },
   { label: 'Redux', icon: IconName.Redux },
   { label: 'Typescript', icon: IconName.Typescript },
