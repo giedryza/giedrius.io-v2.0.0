@@ -24,7 +24,7 @@ const Experience: React.FC = () => {
       <Title title="Experience" />
 
       <ul>
-        {experience.map(exp => (
+        {experience.map((exp) => (
           <li className="experience__list-item" key={exp.company}>
             <div className="experience__placeholder" />
             <article className="experience__card">

@@ -8,7 +8,7 @@ const Skills: React.FC = () => (
     <Title title="Skills" />
 
     <ul className="skills__container">
-      {skills.map(skill => (
+      {skills.map((skill) => (
         <li key={skill.label}>
           <Bubble icon={skill.icon} label={skill.label} />
         </li>

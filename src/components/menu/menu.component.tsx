@@ -7,7 +7,7 @@ import { IDs } from 'components/menu/menu.constants';
 const Menu: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleClick = () => setIsOpen(prevState => !prevState);
+  const handleClick = () => setIsOpen((prevState) => !prevState);
 
   return (
     <Floater position={Position.TOP}>
@@ -30,7 +30,7 @@ const Menu: React.FC = () => {
           aria-labelledby={IDs.menuButton}
           aria-hidden={!isOpen}
         >
-          {contacts.map(contact => (
+          {contacts.map((contact) => (
             <li className="menu__nav-item" key={contact.label}>
               <Icon name={contact.icon} />
               <a

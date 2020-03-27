@@ -11,7 +11,7 @@ const Contacts: React.FC = () => (
     <Title title="Contacts" />
     <nav>
       <ul className="contacts__container">
-        {contacts.map(contact => (
+        {contacts.map((contact) => (
           <li key={contact.label}>
             <Bubble
               link={contact.url}
