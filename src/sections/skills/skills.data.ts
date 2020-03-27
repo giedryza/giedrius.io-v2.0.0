@@ -9,6 +9,7 @@ export const skills = [
   { label: 'Css', icon: IconName.Css },
   { label: 'Sass', icon: IconName.Sass },
   { label: 'Jest', icon: IconName.Jest },
+  { label: 'ESLint', icon: IconName.ESLint },
   { label: 'Gatsby', icon: IconName.Gatsby },
   { label: 'Webpack', icon: IconName.Webpack },
   { label: 'Node', icon: IconName.Node },

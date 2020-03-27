@@ -3,6 +3,7 @@ import React from 'react';
 import { ReactComponent as IAvatar } from 'assets/icons/avatar.svg';
 import { ReactComponent as IClose } from 'assets/icons/close.svg';
 import { ReactComponent as ICss } from 'assets/icons/css.svg';
+import { ReactComponent as IESLint } from 'assets/icons/eslint.svg';
 import { ReactComponent as IExpress } from 'assets/icons/express.svg';
 import { ReactComponent as IFacebook } from 'assets/icons/facebook.svg';
 import { ReactComponent as IGLogo } from 'assets/icons/g-logo.svg';
@@ -29,6 +30,7 @@ export enum IconName {
   Avatar,
   Close,
   Css,
+  ESLint,
   Express,
   Facebook,
   GLogo,
@@ -64,6 +66,8 @@ const Icon: React.FC<Props> = ({ name }) => {
       return <IClose />;
     case IconName.Css:
       return <ICss />;
+    case IconName.ESLint:
+      return <IESLint />;
     case IconName.Express:
       return <IExpress />;
     case IconName.Facebook:
