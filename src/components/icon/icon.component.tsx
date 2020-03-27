@@ -23,7 +23,7 @@ import { ReactComponent as IPhone } from 'assets/icons/phone.svg';
 import { ReactComponent as IReactJs } from 'assets/icons/react.svg';
 import { ReactComponent as IRedux } from 'assets/icons/redux.svg';
 import { ReactComponent as ISass } from 'assets/icons/sass.svg';
-import { ReactComponent as ITypescript } from 'assets/icons/typescript.svg';
+import { ReactComponent as ITypeScript } from 'assets/icons/typescript.svg';
 import { ReactComponent as IWebpack } from 'assets/icons/webpack.svg';
 
 export enum IconName {
@@ -50,7 +50,7 @@ export enum IconName {
   ReactJs,
   Redux,
   Sass,
-  Typescript,
+  TypeScript,
   Webpack,
 }
 
@@ -106,8 +106,8 @@ const Icon: React.FC<Props> = ({ name }) => {
       return <IRedux />;
     case IconName.Sass:
       return <ISass />;
-    case IconName.Typescript:
-      return <ITypescript />;
+    case IconName.TypeScript:
+      return <ITypeScript />;
     case IconName.Webpack:
       return <IWebpack />;
     default:

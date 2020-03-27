@@ -4,7 +4,7 @@ export const skills = [
   { label: 'JavaScript', icon: IconName.JavaScript },
   { label: 'React', icon: IconName.ReactJs },
   { label: 'Redux', icon: IconName.Redux },
-  { label: 'Typescript', icon: IconName.Typescript },
+  { label: 'TypeScript', icon: IconName.TypeScript },
   { label: 'Html', icon: IconName.Html },
   { label: 'Css', icon: IconName.Css },
   { label: 'Sass', icon: IconName.Sass },
