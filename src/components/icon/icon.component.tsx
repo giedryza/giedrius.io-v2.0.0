@@ -23,6 +23,7 @@ import { ReactComponent as IReactJs } from 'assets/icons/react.svg';
 import { ReactComponent as IRedux } from 'assets/icons/redux.svg';
 import { ReactComponent as ISass } from 'assets/icons/sass.svg';
 import { ReactComponent as ITypescript } from 'assets/icons/typescript.svg';
+import { ReactComponent as IWebpack } from 'assets/icons/webpack.svg';
 
 export enum IconName {
   Avatar,
@@ -48,6 +49,7 @@ export enum IconName {
   Redux,
   Sass,
   Typescript,
+  Webpack,
 }
 
 interface Props {
@@ -102,6 +104,8 @@ const Icon: React.FC<Props> = ({ name }) => {
       return <ISass />;
     case IconName.Typescript:
       return <ITypescript />;
+    case IconName.Webpack:
+      return <IWebpack />;
     default:
       return null;
   }

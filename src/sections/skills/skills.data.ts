@@ -10,6 +10,7 @@ export const skills = [
   { label: 'Sass', icon: IconName.Sass },
   { label: 'Jest', icon: IconName.Jest },
   { label: 'Gatsby', icon: IconName.Gatsby },
+  { label: 'Webpack', icon: IconName.Webpack },
   { label: 'Node', icon: IconName.Node },
   { label: 'Express', icon: IconName.Express },
   { label: 'MongoDB', icon: IconName.Mongo },
