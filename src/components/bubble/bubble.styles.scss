@@ -77,6 +77,10 @@ $bubble-sm: 4.5rem;
       > .bubble {
         background: $col__gray-10;
 
+        &.transparent {
+          background: transparent;
+        }
+
         > .bubble__label {
           transition: $transition-duration__md opacity ease-in
             $transition-delay__md;
