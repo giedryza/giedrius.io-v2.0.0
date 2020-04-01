@@ -13,7 +13,6 @@
     justify-content: center;
     cursor: pointer;
     transform: scale(1);
-    outline: none;
     position: relative;
     z-index: 100;
     border-radius: 50%;
@@ -22,7 +21,9 @@
       background: $col__gray-10;
     }
 
-    &:focus {
+    &:focus,
+    &:active {
+      outline: none;
       border: $border__outline;
 
       &:hover {
@@ -77,9 +78,10 @@
     display: block;
     padding: 0.5rem;
     border-bottom: $border__none;
-    outline: none;
 
-    &:focus {
+    &:focus,
+    &:active {
+      outline: none;
       border-bottom: $border__outline;
     }
 
