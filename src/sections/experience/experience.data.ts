@@ -14,7 +14,7 @@ export const experience = [
     company: 'Hometogo',
     web: 'https://www.hometogo.com',
     from: new Date(2019, 9, 14),
-    to: new Date(),
+    to: new Date(2020, 4, 15),
     jobTitle: 'Software Engineer | Frontend',
     jobType: 'Full-time',
     icon: IconName.Hometogo,
