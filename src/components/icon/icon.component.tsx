@@ -14,6 +14,7 @@ import { ReactComponent as IHometogo } from 'assets/icons/hometogo.svg';
 import { ReactComponent as IHtml } from 'assets/icons/html.svg';
 import { ReactComponent as IJavaScript } from 'assets/icons/javascript.svg';
 import { ReactComponent as IJest } from 'assets/icons/jest.svg';
+import { ReactComponent as IKevin } from 'assets/icons/kevin.svg';
 import { ReactComponent as ILinkedIn } from 'assets/icons/linkedin.svg';
 import { ReactComponent as IMediapark } from 'assets/icons/mediapark.svg';
 import { ReactComponent as IMongo } from 'assets/icons/mongo.svg';
@@ -41,6 +42,7 @@ export enum IconName {
   Html,
   JavaScript,
   Jest,
+  Kevin,
   LinkedIn,
   Mediapark,
   Mongo,
@@ -88,6 +90,8 @@ const Icon: React.FC<Props> = ({ name }) => {
       return <IJavaScript />;
     case IconName.Jest:
       return <IJest />;
+    case IconName.Kevin:
+      return <IKevin />;
     case IconName.LinkedIn:
       return <ILinkedIn />;
     case IconName.Mediapark:

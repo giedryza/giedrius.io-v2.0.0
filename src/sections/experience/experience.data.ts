@@ -2,10 +2,19 @@ import { IconName } from 'components/icon/icon.component';
 
 export const experience = [
   {
+    company: 'kevin.',
+    web: 'https://www.kevin.eu',
+    from: new Date(2021, 4, 3),
+    to: new Date(),
+    jobTitle: 'Frontend Developer',
+    jobType: 'Full-time',
+    icon: IconName.Kevin,
+  },
+  {
     company: 'NFQ',
     web: 'https://www.nfq.lt',
     from: new Date(2019, 9, 14),
-    to: new Date(),
+    to: new Date(2021, 3, 30),
     jobTitle: 'Software Engineer | Frontend',
     jobType: 'Full-time',
     icon: IconName.Nfq,
