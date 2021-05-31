@@ -3,6 +3,7 @@ import React from 'react';
 import { ReactComponent as IAvatar } from 'assets/icons/avatar.svg';
 import { ReactComponent as IClose } from 'assets/icons/close.svg';
 import { ReactComponent as ICss } from 'assets/icons/css.svg';
+import { ReactComponent as ICypress } from 'assets/icons/cypress.svg';
 import { ReactComponent as IESLint } from 'assets/icons/eslint.svg';
 import { ReactComponent as IExpress } from 'assets/icons/express.svg';
 import { ReactComponent as IFacebook } from 'assets/icons/facebook.svg';
@@ -17,6 +18,7 @@ import { ReactComponent as IJest } from 'assets/icons/jest.svg';
 import { ReactComponent as IKevin } from 'assets/icons/kevin.svg';
 import { ReactComponent as ILinkedIn } from 'assets/icons/linkedin.svg';
 import { ReactComponent as IMediapark } from 'assets/icons/mediapark.svg';
+import { ReactComponent as IMobx } from 'assets/icons/mobx.svg';
 import { ReactComponent as IMongo } from 'assets/icons/mongo.svg';
 import { ReactComponent as INfq } from 'assets/icons/nfq.svg';
 import { ReactComponent as INode } from 'assets/icons/node.svg';
@@ -31,6 +33,7 @@ export enum IconName {
   Avatar,
   Close,
   Css,
+  Cypress,
   ESLint,
   Express,
   Facebook,
@@ -45,6 +48,7 @@ export enum IconName {
   Kevin,
   LinkedIn,
   Mediapark,
+  Mobx,
   Mongo,
   Nfq,
   Node,
@@ -68,6 +72,8 @@ const Icon: React.FC<Props> = ({ name }) => {
       return <IClose />;
     case IconName.Css:
       return <ICss />;
+    case IconName.Cypress:
+      return <ICypress />;
     case IconName.ESLint:
       return <IESLint />;
     case IconName.Express:
@@ -96,6 +102,8 @@ const Icon: React.FC<Props> = ({ name }) => {
       return <ILinkedIn />;
     case IconName.Mediapark:
       return <IMediapark />;
+    case IconName.Mobx:
+      return <IMobx />;
     case IconName.Mongo:
       return <IMongo />;
     case IconName.Nfq:
