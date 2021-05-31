@@ -20,6 +20,7 @@ import { ReactComponent as ILinkedIn } from 'assets/icons/linkedin.svg';
 import { ReactComponent as IMediapark } from 'assets/icons/mediapark.svg';
 import { ReactComponent as IMobx } from 'assets/icons/mobx.svg';
 import { ReactComponent as IMongo } from 'assets/icons/mongo.svg';
+import { ReactComponent as INext } from 'assets/icons/next.svg';
 import { ReactComponent as INfq } from 'assets/icons/nfq.svg';
 import { ReactComponent as INode } from 'assets/icons/node.svg';
 import { ReactComponent as IPhone } from 'assets/icons/phone.svg';
@@ -50,6 +51,7 @@ export enum IconName {
   Mediapark,
   Mobx,
   Mongo,
+  Next,
   Nfq,
   Node,
   Phone,
@@ -106,6 +108,8 @@ const Icon: React.FC<Props> = ({ name }) => {
       return <IMobx />;
     case IconName.Mongo:
       return <IMongo />;
+    case IconName.Next:
+      return <INext />;
     case IconName.Nfq:
       return <INfq />;
     case IconName.Node:
