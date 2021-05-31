@@ -5,7 +5,7 @@ import Title from 'components/title/title.component';
 
 const Skills: React.FC = () => (
   <section className="skills">
-    <Title title="Skills" />
+    <Title title="Tech" />
 
     <ul className="skills__container">
       {skills.map((skill) => (
