@@ -18,6 +18,7 @@ import { ReactComponent as IJest } from 'assets/icons/jest.svg';
 import { ReactComponent as IKevin } from 'assets/icons/kevin.svg';
 import { ReactComponent as ILinkedIn } from 'assets/icons/linkedin.svg';
 import { ReactComponent as IMediapark } from 'assets/icons/mediapark.svg';
+import { ReactComponent as IMelp } from 'assets/icons/melp.svg';
 import { ReactComponent as IMobx } from 'assets/icons/mobx.svg';
 import { ReactComponent as IMongo } from 'assets/icons/mongo.svg';
 import { ReactComponent as INext } from 'assets/icons/next.svg';
@@ -49,6 +50,7 @@ export enum IconName {
   Kevin,
   LinkedIn,
   Mediapark,
+  Melp,
   Mobx,
   Mongo,
   Next,
@@ -104,6 +106,8 @@ const Icon: React.FC<Props> = ({ name }) => {
       return <ILinkedIn />;
     case IconName.Mediapark:
       return <IMediapark />;
+    case IconName.Melp:
+      return <IMelp />;
     case IconName.Mobx:
       return <IMobx />;
     case IconName.Mongo:

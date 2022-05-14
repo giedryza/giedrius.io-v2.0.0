@@ -2,11 +2,20 @@ import { IconName } from 'components/icon/icon.component';
 
 export const experience = [
   {
+    company: 'MELP.',
+    web: 'https://melp.com',
+    from: new Date(2022, 4, 1),
+    to: new Date(),
+    jobTitle: 'Software Engineer | Mobile',
+    jobType: 'Full-time',
+    icon: IconName.Melp,
+  },
+  {
     company: 'kevin.',
     web: 'https://www.kevin.eu',
     from: new Date(2021, 4, 3),
-    to: new Date(),
-    jobTitle: 'Frontend Developer',
+    to: new Date(2022, 4, 1),
+    jobTitle: 'Software Engineer | Frontend/Lead',
     jobType: 'Full-time',
     icon: IconName.Kevin,
   },
@@ -36,14 +45,5 @@ export const experience = [
     jobTitle: 'React Developer',
     jobType: 'Full-time',
     icon: IconName.Mediapark,
-  },
-  {
-    company: 'giedrius.io',
-    web: 'https://www.giedrius.io',
-    from: new Date(2018, 7, 1),
-    to: new Date(),
-    jobTitle: 'Frontend Developer',
-    jobType: 'Freelance',
-    icon: IconName.GLogo,
   },
 ];
