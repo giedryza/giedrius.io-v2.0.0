@@ -2,7 +2,7 @@ import { IconName } from 'components/icon/icon.component';
 
 export const experience = [
   {
-    company: 'MELP.',
+    company: 'MELP',
     web: 'https://melp.com',
     from: new Date(2022, 4, 1),
     to: new Date(),
